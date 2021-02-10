@@ -12,7 +12,7 @@ print(f"slicing {sys.argv[1]} to {sys.argv[2]} slices ...")
 
 note = ["C","C#","D","D#","E","F","F#","G","G#","A","A#","B"]
 note_count = 0
-octave = 0
+octave = 1
 offset = 0
 incrementor = 0
 for sl in range(audio_range):
