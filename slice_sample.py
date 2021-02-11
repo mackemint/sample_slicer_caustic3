@@ -2,7 +2,7 @@ from zipfile import ZipFile
 from pydub import AudioSegment
 import sys, os, glob
 
-sound = AudioSegment.from_wav(sys.argv[1])
+sound = AudioSegment.from_wav(sys.argv[1]).set_frame_rate(44100).set_sample_width(2)
 slice_length = int(len(sound) / int(sys.argv[2]))
 slice_indicator = "slice_"
 audio_range = int(len(sound)/(len(sound) / int(sys.argv[2])))
